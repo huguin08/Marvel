@@ -11,6 +11,17 @@ public class Character {
     private String name;
     private String description;
 
+    // Constructor vacío requerido por JPA
+    public Character() {
+    }
+
+    // Constructor con parámetros
+    public Character(Long id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
+
     public Long getId() {
         return id;
     }

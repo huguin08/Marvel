@@ -1,5 +1,6 @@
 package controller;
 
+import model.Character;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,7 +11,7 @@ import service.MarvelService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/marvel")
+@RequestMapping("/v1/public")
 public class MarvelController {
 
     @Autowired
@@ -18,6 +19,7 @@ public class MarvelController {
 
     @GetMapping("/characters")
     public List<Character> getCharacters() {
+        System.out.println("entre **********************************");
         return marvelService.getCharacters();
     }
 
