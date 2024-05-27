@@ -1,9 +1,9 @@
-package service;
+package com.marvel.marvel.service;
 
-import model.LogEntry;
+import com.marvel.marvel.model.LogEntry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.LogRepository;
+import com.marvel.marvel.repository.LogRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;

@@ -1,4 +1,4 @@
-package security;
+package com.marvel.marvel.security;
 
 
 import org.springframework.context.annotation.Bean;

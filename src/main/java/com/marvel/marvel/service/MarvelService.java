@@ -1,16 +1,16 @@
-package service;
+package com.marvel.marvel.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.Character;
-import model.LogEntry;
+import com.marvel.marvel.model.Character;
+import com.marvel.marvel.model.LogEntry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import repository.LogRepository;
+import com.marvel.marvel.repository.LogRepository;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
